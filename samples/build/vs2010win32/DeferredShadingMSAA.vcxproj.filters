@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="shaders"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\ComplexMask.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\FillGBuffer.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\Lighting.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\Common.hlsli">
+			<Filter>shaders</Filter>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\DeferredRenderer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\DeferredShadingMSAA.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\ObjMeshDX.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\DeferredRenderer.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\DirectXUtil.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\ObjMeshDX.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

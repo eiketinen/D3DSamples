@@ -1,0 +1,18 @@
+
+Sponza Model
+
+This directory contains a lightly modified version of the Sponza model dataset, as provided by Crytek on their website. Since an explicit license for this content was not provided publically, we are including all original text and links from Crytek's download page where this dataset was found. The model, material, and texture data were all current as of March 3, 2014.
+
+Original download page:
+    http://www.crytek.com/cryengine/cryengine3/downloads
+
+Original download links:
+    http://www.crytek.com/download/sponza_obj.rar
+    http://www.crytek.com/download/sponza_max.rar
+    http://www.crytek.com/download/sponza_textures.rar
+
+Description from download page:
+
+"The Atrium Sponza Palace, Dubrovnik, is an elegant and improved model created by Frank Meinl. The original Sponza model was created by Marko Dabrovic in early 2002. Over the years, the Sponza Atrium scene has become one of the most popular 3D scenes for testing global illumination and radiosity due to it's specific architectural structure which is particularly complex for global illumination light."
+
+"However, nowadays it is considered as a simple model, thus it was decided to crate a new model with highly improved appearance and scene complexity. It is donated to the public for  radiosity and is represented in several different formats (3ds, Obj) for use with various commercial 3D applications and renderers."

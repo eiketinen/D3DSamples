@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Win32">
+			<Configuration>debug</Configuration>
+			<Platform>Win32</Platform>
+	</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Win32">
+			<Configuration>release</Configuration>
+			<Platform>Win32</Platform>
+	</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ApplicationEnvironment>title</ApplicationEnvironment>
+		<!-- - - - -->
+		<PlatformToolset>v110</PlatformToolset>
+		<MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>v110</PlatformToolset>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/SoftShadows/debug\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>SoftShadowsDEBUG</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CallingConvention>Cdecl</CallingConvention>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4005 /wd4995 /wd4390 /wd4100 /wd4481 /W4 /Oy- /Gm- /EHsc /wd4995</AdditionalOptions>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../SoftShadows/src;./../../../extensions/externals/include/dxut/Core;./../../../extensions/externals/include/dxut/Optional;./../../../extensions/externals/include/effects11;./../../../extensions/include/nvsimplemesh;./../../SoftShadows/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include/assimp;./../../../extensions/externals/include;$(WindowsSDK_IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_DEBUG;PROFILE;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;Effects11DEBUG.lib;DXUTDEBUG.lib;nvsimplemeshDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)SoftShadowsDEBUG.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../SoftShadows/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/SoftShadowsDEBUG.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/SoftShadowsDEBUG.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/SoftShadows/release\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>SoftShadows</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4005 /wd4995 /wd4390 /wd4100 /wd4481 /W4 /Oy- /Gm- /EHsc /wd4995</AdditionalOptions>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>./../../SoftShadows/src;./../../../extensions/externals/include/dxut/Core;./../../../extensions/externals/include/dxut/Optional;./../../../extensions/externals/include/effects11;./../../../extensions/include/nvsimplemesh;./../../SoftShadows/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include/assimp;./../../../extensions/externals/include;$(WindowsSDK_IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;Effects11.lib;DXUT.lib;nvsimplemesh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)SoftShadows.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../SoftShadows/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/SoftShadows.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/SoftShadows.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="..\..\SoftShadows\media\goof_knight.sdkmesh">
+		</None>
+		<None Include="..\..\SoftShadows\media\podium.sdkmesh">
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6.dds">
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6_normal.dds">
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6_rock.dds">
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\SoftShadows\media\SoftShadows.fx">
+		</None>
+		<None Include="..\..\SoftShadows\media\Common.fxh">
+		</None>
+		<None Include="..\..\SoftShadows\media\ContactHardeningShadows.fxh">
+		</None>
+		<None Include="..\..\SoftShadows\media\PercentageCloserSoftShadows.fxh">
+		</None>
+		<None Include="..\..\SoftShadows\media\Poisson.fxh">
+		</None>
+		<None Include="..\..\SoftShadows\media\Shading.fxh">
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\SoftShadows\src\DXUTApp11.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SimpleTexture2D.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadows.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadowsApp.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadowsRenderer.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\SoftShadows\src\D3D11SavedState.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\DXUTApp11.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\resource.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SimpleTexture2D.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SoftShadowsApp.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SoftShadowsRenderer.h">
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\stdafx.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2012win32/Effects11.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2012win32/DXUT.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+		<ProjectReference Include="./../../../extensions/build/vs2012win32/nvsimplemesh.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\SSAO"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\SSAO\Shaders"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\SSAO\Shaders\Src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\BlurX_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\BlurY_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\Blur_Common.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ConstantBuffers.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\DeinterleaveDepth_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\FullScreenTriangle_VS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\GenerateAO_Common.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\LinearizeDepthNoMSAA_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\LinearizeDepth_Common.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\NonSeparableAO_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ReconstructNormal_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ReinterleaveAO_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ResolveAndLinearizeDepthMSAA_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\SeparableAO_PS.hlsl">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</None>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\SharedDefines.h">
+			<Filter>src\SSAO\Shaders\Src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\compile_all.bat">
+			<Filter>src\SSAO\Shaders</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\helper_compile_ps.bat">
+			<Filter>src\SSAO\Shaders</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\helper_compile_vs.bat">
+			<Filter>src\SSAO\Shaders</Filter>
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\set_env_vars.bat">
+			<Filter>src\SSAO\Shaders</Filter>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\AppState.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\ConstantBuffers.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\GPUTimers.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\InputDepthInfo.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\ProjectionMatrixInfo.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\RandomTexture.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\Renderer.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\RenderTargets.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\States.cpp">
+			<Filter>src\SSAO</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\AppState.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Common.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\ConstantBuffers.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\GPUTimers.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\InputDepthInfo.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\MatrixView.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\OutputColorInfo.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\ProjectionMatrixInfo.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RandomTexture.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Renderer.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RenderOptions.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RenderTargets.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\States.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\TextureUtil.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Types.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Viewports.h">
+			<Filter>src\SSAO</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\CompileHLSL.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\DeinterleavedTexturing.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\Scene3D.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\CompileHLSL.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\Scene3D.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

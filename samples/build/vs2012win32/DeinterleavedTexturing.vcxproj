@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Win32">
+			<Configuration>debug</Configuration>
+			<Platform>Win32</Platform>
+	</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Win32">
+			<Configuration>release</Configuration>
+			<Platform>Win32</Platform>
+	</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ApplicationEnvironment>title</ApplicationEnvironment>
+		<!-- - - - -->
+		<PlatformToolset>v110</PlatformToolset>
+		<MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<PlatformToolset>v110</PlatformToolset>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/DeinterleavedTexturing/debug\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>DeinterleavedTexturingDEBUG</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CallingConvention>Cdecl</CallingConvention>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4005 /W4 /Oy- /Gm- /EHsc /wd4995 /wd4390</AdditionalOptions>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../DeinterleavedTexturing/src;./../../../extensions/externals/include/dxut/Core;./../../../extensions/externals/include/dxut/Optional;./../../../extensions/externals/include/effects11;./../../../extensions/include/nvsimplemesh;./../../DeinterleavedTexturing/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include/assimp;./../../../extensions/externals/include;$(WindowsSDK_IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_DEBUG;PROFILE;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;Effects11DEBUG.lib;DXUTDEBUG.lib;nvsimplemeshDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)DeinterleavedTexturingDEBUG.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../DeinterleavedTexturing/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/DeinterleavedTexturingDEBUG.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/DeinterleavedTexturingDEBUG.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/DeinterleavedTexturing/release\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>DeinterleavedTexturing</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/wd4005 /W4 /Oy- /Gm- /EHsc /wd4995 /wd4390</AdditionalOptions>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>./../../DeinterleavedTexturing/src;./../../../extensions/externals/include/dxut/Core;./../../../extensions/externals/include/dxut/Optional;./../../../extensions/externals/include/effects11;./../../../extensions/include/nvsimplemesh;./../../DeinterleavedTexturing/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include/assimp;./../../../extensions/externals/include;$(WindowsSDK_IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;Effects11.lib;DXUT.lib;nvsimplemesh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)DeinterleavedTexturing.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../DeinterleavedTexturing/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/DeinterleavedTexturing.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/DeinterleavedTexturing.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\BlurX_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\BlurY_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\Blur_Common.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ConstantBuffers.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\DeinterleaveDepth_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\FullScreenTriangle_VS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\GenerateAO_Common.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\LinearizeDepthNoMSAA_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\LinearizeDepth_Common.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\NonSeparableAO_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ReconstructNormal_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ReinterleaveAO_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\ResolveAndLinearizeDepthMSAA_PS.hlsl">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\SeparableAO_PS.hlsl">
+		</None>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\Src\SharedDefines.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\compile_all.bat">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\helper_compile_ps.bat">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\helper_compile_vs.bat">
+		</None>
+		<None Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders\set_env_vars.bat">
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\AppState.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\ConstantBuffers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\GPUTimers.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\InputDepthInfo.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\ProjectionMatrixInfo.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\RandomTexture.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\Renderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\RenderTargets.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\SSAO\States.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\AppState.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Common.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\ConstantBuffers.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\GPUTimers.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\InputDepthInfo.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\MatrixView.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\OutputColorInfo.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\ProjectionMatrixInfo.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RandomTexture.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Renderer.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RenderOptions.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\RenderTargets.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Shaders.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\States.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\TextureUtil.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Types.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\SSAO\Viewports.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\CompileHLSL.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\DeinterleavedTexturing.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeinterleavedTexturing\src\Scene3D.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\CompileHLSL.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeinterleavedTexturing\src\Scene3D.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2012win32/Effects11.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+		<ProjectReference Include="./../../../extensions/externals/build/vs2012win32/DXUT.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+		<ProjectReference Include="./../../../extensions/build/vs2012win32/nvsimplemesh.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

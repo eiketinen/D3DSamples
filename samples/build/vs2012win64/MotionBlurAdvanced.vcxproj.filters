@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="shaders"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\constants.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_depth.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_gather.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_neighbormax.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_quad.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_scene.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\ps_tilemax.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\vs_quad.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\MotionBlurAdvanced\assets\shaders\vs_scene.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\MotionBlurAdvanced\src\common_util.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\MotionBlurAdvanced\src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\MotionBlurAdvanced\src\perftracker.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\MotionBlurAdvanced\src\scene.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\MotionBlurAdvanced\src\common_util.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\MotionBlurAdvanced\src\perftracker.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\MotionBlurAdvanced\src\perftracker_int.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\MotionBlurAdvanced\src\resource.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\MotionBlurAdvanced\src\scene.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

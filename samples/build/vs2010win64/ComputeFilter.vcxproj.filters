@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="shaders"><!-- HLSL_Precompile -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\vs_quad.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\vs_scene.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\ps_post.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\ps_post_blursize.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\ps_scene.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\cs_sat_offset.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\cs_sat_sum.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+		<CustomBuild Include="..\..\ComputeFilter\src\shaders\cs_sat_translate.hlsl">
+			<Filter>shaders</Filter>
+		</CustomBuild>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\ComputeFilter\src\common_util.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeFilter\src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeFilter\src\perftracker.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeFilter\src\sat.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\ComputeFilter\src\scene.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\ComputeFilter\src\common_util.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeFilter\src\perftracker.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeFilter\src\perftracker_int.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeFilter\src\sat.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\ComputeFilter\src\scene.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="resources"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="..\..\ComputeFilter\src\resources\resource.h">
+			<Filter>resources</Filter>
+		</ClInclude>
+		<ResourceCompile Include="..\..\ComputeFilter\src\resources\Resource.rc">
+			<Filter>resources</Filter>
+		</ResourceCompile>
+	</ItemGroup>
+</Project>

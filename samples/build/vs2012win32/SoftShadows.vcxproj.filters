@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="Media Files"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\SoftShadows\media\goof_knight.sdkmesh">
+			<Filter>Media Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\podium.sdkmesh">
+			<Filter>Media Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6.dds">
+			<Filter>Media Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6_normal.dds">
+			<Filter>Media Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\lichen6_rock.dds">
+			<Filter>Media Files</Filter>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="FX Files"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\SoftShadows\media\SoftShadows.fx">
+			<Filter>FX Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\Common.fxh">
+			<Filter>FX Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\ContactHardeningShadows.fxh">
+			<Filter>FX Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\PercentageCloserSoftShadows.fxh">
+			<Filter>FX Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\Poisson.fxh">
+			<Filter>FX Files</Filter>
+		</None>
+		<None Include="..\..\SoftShadows\media\Shading.fxh">
+			<Filter>FX Files</Filter>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\SoftShadows\src\DXUTApp11.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SimpleTexture2D.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadows.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadowsApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\SoftShadows\src\SoftShadowsRenderer.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\SoftShadows\src\D3D11SavedState.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\DXUTApp11.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\resource.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SimpleTexture2D.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SoftShadowsApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\SoftShadowsRenderer.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\SoftShadows\src\stdafx.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+</Project>

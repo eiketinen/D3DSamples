@@ -1,0 +1,303 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 14.12.2009 15:58:39
+
+newmtl bricks
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\spnza_bricks_a_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\spnza_bricks_a_diff.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\spnza_bricks_a_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\spnza_bricks_a_ddn.tga
+
+newmtl ceiling
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_ceiling_a_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_ceiling_a_diff.tga
+
+newmtl column_a
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_a_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_a_diff.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_a_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_a_ddn.tga
+
+newmtl arch
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_arch_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_arch_diff.tga
+
+newmtl floor
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_floor_a_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_floor_a_diff.tga
+
+newmtl column_b
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_b_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_b_diff.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_b_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_b_ddn.tga
+
+newmtl column_c
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_c_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_c_diff.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_c_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_column_c_ddn.tga
+
+newmtl details
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_details_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_details_diff.tga
+
+newmtl Material__47
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+
+newmtl wire_177088027
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.694118 0.345098 0.105882
+	Kd 0.694118 0.345098 0.105882
+	Ks 0.350000 0.350000 0.350000
+
+newmtl roof
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_roof_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_roof_diff.tga
+
+newmtl wire_225143087
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.882353 0.560784 0.341176
+	Kd 0.882353 0.560784 0.341176
+	Ks 0.350000 0.350000 0.350000
+
+newmtl leaf
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_thorn_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_thorn_diff.tga
+	map_d F:\SponzaModel\sponza_obj\SponzaTextures\sponza_thorn_mask.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_thorn_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\sponza_thorn_ddn.tga
+
+newmtl fabric
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\sponza_fabric_diff.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\sponza_fabric_diff.tga
+
+newmtl vase_hanging
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\vase_hanging.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\vase_hanging.tga
+
+newmtl chain
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\chain_texture.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\chain_texture.tga
+	map_d F:\SponzaModel\sponza_obj\SponzaTextures\chain_texture_mask.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\chain_texture_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\chain_texture_ddn.tga
+
+newmtl vase_round
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\vase_round.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\vase_round.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\vase_round_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\vase_round_ddn.tga
+
+newmtl Material__57
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\vase_plant.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\vase_plant.tga
+	map_d F:\SponzaModel\sponza_obj\SponzaTextures\vase_plant_mask.tga
+
+newmtl vase
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\vase_dif.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\vase_dif.tga
+
+newmtl Material__25
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka F:\SponzaModel\sponza_obj\SponzaTextures\lion.tga
+	map_Kd F:\SponzaModel\sponza_obj\SponzaTextures\lion.tga
+	map_bump F:\SponzaModel\sponza_obj\SponzaTextures\lion_ddn.tga
+	bump F:\SponzaModel\sponza_obj\SponzaTextures\lion_ddn.tga
+
+newmtl 16___Default
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000

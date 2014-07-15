@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|Win32">
+			<Configuration>debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="release|Win32">
+			<Configuration>release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<GenerateManifest>false</GenerateManifest>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/DeferredShadingMSAA/debug\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>DeferredShadingMSAADEBUG</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<CallingConvention>Cdecl</CallingConvention>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/W4 /Oy- /Gm- /EHsc /wd4005 /wd4995 /wd4390 /wd4244</AdditionalOptions>
+			<Optimization>Disabled</Optimization>
+			<AdditionalIncludeDirectories>./../../DeferredShadingMSAA/src;./../../../extensions/include/nvidiautils;./../../../extensions/include/nvsimplemesh;./../../../extensions/externals/include/directxtex;./../../../extensions/externals/include/simpleopt;./../../DeferredShadingMSAA/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include;./../../../extensions/externals/include/anttweakbar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0600;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_DEBUG;PROFILE;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>xinput.lib;d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3d11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;nvidiautilsDEBUG.lib;nvsimplemeshDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)DeferredShadingMSAADEBUG.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../DeferredShadingMSAA/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/DeferredShadingMSAADEBUG.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/DeferredShadingMSAADEBUG.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<OutDir>./../../bin/win32\</OutDir>
+		<IntDir>./Win32/DeferredShadingMSAA/release\</IntDir>
+		<TargetExt>.exe</TargetExt>
+		<TargetName>DeferredShadingMSAA</TargetName>
+		<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisRules />
+		<CodeAnalysisRuleAssemblies />
+		<SkipCopyingSymbolsToOutputDirectory>true</SkipCopyingSymbolsToOutputDirectory>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+		<ClCompile>
+			<TreatWarningAsError>true</TreatWarningAsError>
+			<EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+			<FloatingPointModel>Fast</FloatingPointModel>
+			<AdditionalOptions>/W4 /Oy- /Gm- /EHsc /wd4005 /wd4995 /wd4390 /wd4244</AdditionalOptions>
+			<Optimization>MaxSpeed</Optimization>
+			<AdditionalIncludeDirectories>./../../DeferredShadingMSAA/src;./../../../extensions/include/nvidiautils;./../../../extensions/include/nvsimplemesh;./../../../extensions/externals/include/directxtex;./../../../extensions/externals/include/simpleopt;./../../DeferredShadingMSAA/include;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/include;./../../../extensions/externals/include;./../../../extensions/externals/include/anttweakbar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0600;D3DXFX_LARGEADDRESS_HANDLE;_UNICODE;UNICODE;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<WarningLevel>Level3</WarningLevel>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<PrecompiledHeader>NotUsing</PrecompiledHeader>
+			<PrecompiledHeaderFile></PrecompiledHeaderFile>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+		</ClCompile>
+		<Link>
+			<AdditionalOptions>/DEBUG /MACHINE:x86 /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /NOLOGO /OPT:REF /OPT:ICF /INCREMENTAL:NO</AdditionalOptions>
+			<AdditionalDependencies>xinput.lib;d3d9.lib;d3dcompiler.lib;d3dx11.lib;d3d11.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;assimp.lib;nvidiautils.lib;nvsimplemesh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)DeferredShadingMSAA.exe</OutputFile>
+			<AdditionalLibraryDirectories>./../../../extensions/externals/lib/win32;./../../../extensions/lib/win32;./../../DeferredShadingMSAA/redist/win32;C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<ProgramDatabaseFile>$(OutDir)/DeferredShadingMSAA.exe.pdb</ProgramDatabaseFile>
+			<GenerateMapFile>true</GenerateMapFile>
+			<MapFileName>$(OutDir)/DeferredShadingMSAA.exe.map</MapFileName>
+			<SubSystem>Windows</SubSystem>
+			<ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+			<TargetMachine>MachineX86</TargetMachine>
+		</Link>
+		<ResourceCompile>
+		</ResourceCompile>
+		<ProjectReference>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\ComplexMask.hlsl">
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\FillGBuffer.hlsl">
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\Lighting.hlsl">
+		</None>
+		<None Include="..\..\DeferredShadingMSAA\src\shaders\Common.hlsli">
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\DeferredRenderer.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\DeferredShadingMSAA.cpp">
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredShadingMSAA\src\ObjMeshDX.cpp">
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\DeferredRenderer.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\DirectXUtil.h">
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredShadingMSAA\src\ObjMeshDX.h">
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/nvidiautils.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+		<ProjectReference Include="./../../../extensions/build/vs2010win32/nvsimplemesh.vcxproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

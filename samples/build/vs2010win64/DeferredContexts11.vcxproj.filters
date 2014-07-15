@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="src"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\renderers"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredContexts11\src\renderers\DC_BatchInstances_Renderer.cpp">
+			<Filter>src\renderers</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredContexts11\src\renderers\IC_Instancing_Renderer.cpp">
+			<Filter>src\renderers</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredContexts11\src\renderers\DC_BatchInstances_Renderer.h">
+			<Filter>src\renderers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\renderers\IC_Instancing_Renderer.h">
+			<Filter>src\renderers</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\renderers\IC_Renderer.h">
+			<Filter>src\renderers</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\testing"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredContexts11\src\testing\AutomatedTestingHarness.cpp">
+			<Filter>src\testing</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredContexts11\src\testing\AutomatedTestingHarness.h">
+			<Filter>src\testing</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src\utility"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredContexts11\src\utility\RendererBase.cpp">
+			<Filter>src\utility</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredContexts11\src\utility\Scene.cpp">
+			<Filter>src\utility</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\DeferredContexts11\src\utility\ShaderPermutations.cpp">
+			<Filter>src\utility</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredContexts11\src\utility\RendererBase.h">
+			<Filter>src\utility</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\utility\Scene.h">
+			<Filter>src\utility</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\utility\ShaderPermutations.h">
+			<Filter>src\utility</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\utility\SimpleShipController.h">
+			<Filter>src\utility</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\..\DeferredContexts11\src\DeferredContexts11.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClInclude Include="..\..\DeferredContexts11\src\DeferredContexts11.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\DeferredContexts11\src\resource.h">
+			<Filter>src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="shaders"><!--  -->
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DeferredContexts11\assets\MultithreadedTests11_PS.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+		<None Include="..\..\DeferredContexts11\assets\MultithreadedTests11_VS.hlsl">
+			<Filter>shaders</Filter>
+		</None>
+	</ItemGroup>
+</Project>
